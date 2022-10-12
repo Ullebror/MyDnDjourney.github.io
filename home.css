@@ -42,3 +42,27 @@
     width: auto\9; /* ie8 */
     border: solid;
   }
+  @media only screen and (max-width : 320px){
+    .grid-container > header, nav, section, aside, footer {
+      background-color: antiquewhite;
+      text-align: center;
+      padding: 20px 0;
+      font-size: 10px;
+    }
+  }
+  @media only screen and (max-width : 480px){
+    .grid-container > header, nav, section, aside, footer {
+      background-color: antiquewhite;
+      text-align: center;
+      padding: 20px 0;
+      font-size: 12px;
+    }
+  }
+  @media only screen and (max-width : 1000px){
+    .grid-container > header, nav, section, aside, footer {
+      background-color: antiquewhite;
+      text-align: center;
+      padding: 20px 0;
+      font-size: 20px;
+    }
+  }
