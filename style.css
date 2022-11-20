@@ -1,14 +1,9 @@
-.home {
-    background-color: burlywood;
-    font-family: fantasy;
-    
-  }
   .roll20 {
     background-color: #f297f2;
   }
   
   .fate {
-    background-color:#2ed7d7;
+    background-color:#3c93f7;
   }
   
   .fantasyGrounds{
@@ -49,6 +44,7 @@
     border: solid 2px;
     border-radius: 5px;
     padding: 5px;
+    background-color:rgba(118, 118, 245, 0.705);
   }
   
   img {
