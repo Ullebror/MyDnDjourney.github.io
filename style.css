@@ -1,62 +1,73 @@
-.item1 { grid-area: header; text-align: left; padding: 0; }
+.item1 { grid-area: header; text-align: center; }
 .item2 { grid-area: menu; border-style: solid; align-self: start; position: sticky; top: 120px; }
-.item3 { grid-area: main; padding-left: 30px; padding-right: 10; text-align:center;}
-.item4 { grid-area: right; padding-left: 10px; padding-top: 0px; }
+.item3 { grid-area: main; padding-left: 30px; padding-right: 10; text-align:justify;}
+.item4 { grid-area: right; padding-left: 10px; padding-top: 50px; }
 .item5 { grid-area: footer; text-align: center; }
 
 .grid-container {
   display: grid;
   grid-template-areas:
-    'menu menu empty header header header'
+    'menu menu header header header header'
     'menu menu main main main right'
-    'menu menu footer footer footer none';
+    'menu menu footer footer footer footer';
   gap: 5px;
   padding: 5px;
 }
 
 .grid-container > header, nav, section, aside, footer {
-  background-color:#3c93f7;
   padding: 20px 0;
   font-size: 30px;
   font-family: 'Times New Roman', Times, serif;
 }
 
-  .roll20 {
-    background-color: #f297f2;
-    text-align: center;
+.roll20 {
+  background-color: #f297f2;
+    
+}
+  
+.fate {
+  background-color:#3c93f7;
+  text-align: center;
   }
   
-  .fate {
-    background-color:#3c93f7;
-    text-align: center;
-    font-size: 20pt;
-  }
-  
-  .fantasyGrounds{
-    background-color:#fbe5c8;
-  }
+.fantasyGrounds{
+  background-color:#fbe5c8;
+}
 
-  .bordered {
-    border: solid 2px;
-    border-radius: 5px;
-    padding: 5px;
-    background-color:rgba(118, 118, 245, 0.705);
-    text-align: justify;
-  }
+.fate_paragraph {
+  border: solid 2px;
+  border-radius: 5px;
+  padding: 5px;
+  background-color:rgba(101, 172, 253, 0.979);
+  text-align: justify;
+  font-size: 20;
+}
+
+.roll20_paragraph {
+  border: solid 2px;
+  border-radius: 5px;
+  padding: 5px;
+  background-color:rgba(197, 101, 253, 0.979);
+  text-align: justify;
+  font-size: 20;
+}
   
-  img {
-    max-width: 100%;
-    height: auto;
-    width: auto\9; /* ie8 */
-    border: solid;
-  }
+img {
+  max-width: 100%;
+  height: auto;
+  width: auto\9; /* ie8 */
+  border: solid;
+}
+
+.fate_pic {
+  position:relative;
+}
+.links {
+  text-align: center;
+}
   
-  .links {
-    text-align: center;
-  }
-  
-  .terms {
-    background-color: #e5fdfd;
-    padding: 10px;
-    line-height: 1.5;
-  }
+.terms {
+  background-color: #e5fdfd;
+  padding: 10px;
+  line-height: 1.5;
+}
