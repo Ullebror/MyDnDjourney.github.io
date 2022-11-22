@@ -19,7 +19,9 @@
   font-size: 30px;
   font-family: 'Times New Roman', Times, serif;
 }
-
+h1, h2, h3, h4, h5 {
+  text-align: center;
+}
 .roll20 {
   background-color: #f297f2;
     
@@ -42,7 +44,7 @@
   padding: 5px;
   background-color:rgba(101, 172, 253, 0.979);
   text-align: justify;
-  font-size: 20;
+  font-size: 20pt;
 }
 
 .characters {
