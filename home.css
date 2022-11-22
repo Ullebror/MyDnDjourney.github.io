@@ -1,37 +1,31 @@
 .item1 { grid-area: header; text-align: left; padding: 0; }
 .item2 { grid-area: menu; border-style: solid; align-self: start; position: sticky; top: 120px; }
 .item3 { grid-area: main; padding-left: 30px; padding-right: 10; text-align:center;}
-.item4 { grid-area: right; padding-left: 10px; padding-top: 0px; }
+.item4 { grid-area: right; padding-left: 20px; padding-top: 0px; align-self: start; position: sticky; top: 100px;}
 .item5 { grid-area: footer; text-align: center; }
 
 .grid-container {
   display: grid;
   grid-template-areas:
-    'menu menu empty header header header'
+    'menu menu header header header right'
     'menu menu main main main right'
-    'menu menu footer footer footer none';
+    'menu menu footer footer footer right';
   gap: 5px;
   padding: 5px;
 }
 
 .nav {text-align: center;}
 
-.index {background-color: antiquewhite;}
+.index {background-color: #fbe5c8;}
 
 .justified {text-align: justify;}
 
 .grid-container > header, nav, section, aside, footer {
-  background-color: antiquewhite;
+  background-color: #fbe5c8;
   padding: 20px 0;
   font-size: 30px;
   font-family: 'Times New Roman', Times, serif;
 }
-
-.terms {
-    background-color: #e5fdfd;
-    padding: 10px;
-    line-height: 1.5;
-  }
 
   .links {
     text-align: center;
@@ -53,7 +47,7 @@
   }
   @media only screen and (max-width : 480px){
     .grid-container > header, nav, section, aside, footer {
-      background-color: antiquewhite;
+      background-color: #fbe5c8;
       text-align: center;
       padding: 20px 0;
       font-size: 12px;
@@ -61,7 +55,7 @@
   }
   @media only screen and (max-width : 1000px){
     .grid-container > header, nav, section, aside, footer {
-      background-color: antiquewhite;
+      background-color: #fbe5c8;
       text-align: center;
       padding: 20px 0;
       font-size: 20px;

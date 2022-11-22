@@ -25,6 +25,8 @@
     
 }
   
+.nav {text-align: center;}
+
 .fate {
   background-color:#3c93f7;
   text-align: center;
@@ -41,6 +43,10 @@
   background-color:rgba(101, 172, 253, 0.979);
   text-align: justify;
   font-size: 20;
+}
+
+.characters {
+  background-color:#fbe5c8;
 }
 
 .roll20_paragraph {
@@ -60,14 +66,13 @@ img {
 }
 
 .fate_pic {
-  position:relative;
+  position:sticky;
+  top:150px;
 }
 .links {
   text-align: center;
 }
   
 .terms {
-  background-color: #e5fdfd;
-  padding: 10px;
-  line-height: 1.5;
+  background-color: #fbe5c8;
 }
