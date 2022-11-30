@@ -1,5 +1,5 @@
 .item1 { grid-area: header; text-align: center; padding: 0; }
-.item2 { grid-area: menu; border-style: solid; align-self: start; position: sticky; top: 120px; }
+.item2 { grid-area: menu; border-style: solid; align-self: start; position: sticky; top: 120px; text-align: center; }
 .item3 { grid-area: main; padding-left: 30px; padding-right: 10; text-align:center;}
 .item4 { grid-area: right; padding-left: 20px; padding-top: 0px; align-self: start; position: sticky; top: 100px;}
 .item5 { grid-area: footer; text-align: center; }
@@ -14,11 +14,15 @@
   padding: 5px;
 }
 
-.nav {text-align: center;}
+
 
 .index {background-color: #fbe5c8;}
 
 .justified {text-align: justify;}
+
+.phoneNav {display: none;}
+
+.desktopNav {text-align: center;}
 
 .grid-container > header, nav, section, aside, footer {
   background-color: #fbe5c8;
@@ -37,27 +41,32 @@
     width: auto\9; /* ie8 */
     border: solid;
   }
-  @media only screen and (max-width : 320px){
-    .grid-container > header, nav, section, aside, footer {
-      background-color: antiquewhite;
-      text-align: center;
-      padding: 20px 0;
-      font-size: 10px;
-    }
-  }
-  @media only screen and (max-width : 480px){
-    .grid-container > header, nav, section, aside, footer {
-      background-color: #fbe5c8;
-      text-align: center;
-      padding: 20px 0;
-      font-size: 12px;
-    }
-  }
+ 
   @media only screen and (max-width : 1000px){
     .grid-container > header, nav, section, aside, footer {
       background-color: #fbe5c8;
-      text-align: center;
       padding: 20px 0;
-      font-size: 20px;
+      font-size: 12px;
+    }
+  
+    .grid-container {
+      display: grid;
+      grid-template-areas:
+        'header header right'
+        'menu menu right'
+        'main main right'
+        'main main right';
+      gap: 5px;
+      padding: 5px;
+    }
+    .desktopNav {
+      display: none !important;
+    }
+    .item5 {
+      display: none !important;
+    }
+    .phoneNav {
+      text-align: center;
+      display: block;
     }
   }
