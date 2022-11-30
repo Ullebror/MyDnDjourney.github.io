@@ -102,10 +102,10 @@ h1, h2, h3, h4, h5 {
   .grid-container {
     display: grid;
     grid-template-areas:
-      'header header right'
-      'menu menu right'
-      'main main right'
-      'main main right';
+      'header header header header'
+      'menu menu  menu right'
+      'main main main right'
+      'main main main right';
     gap: 5px;
     padding: 5px;
   }
