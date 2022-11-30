@@ -1,28 +1,32 @@
-.item1 { grid-area: header; text-align: center; padding: 0; }
-.item2 { grid-area: menu; border-style: solid; align-self: start; position: sticky; top: 120px; text-align: center; }
-.item3 { grid-area: main; padding-left: 30px; padding-right: 10; text-align:center;}
-.item4 { grid-area: right; padding-left: 20px; padding-top: 0px; align-self: start; position: sticky; top: 100px;}
-.item5 { grid-area: footer; text-align: center; }
+@media only screen and (min-width : 1001px){
+  .item1 { grid-area: header; text-align: center; padding: 0; }
+  .item2 { grid-area: menu; border-style: solid; align-self: start; position: sticky; top: 120px; text-align: center; }
+  .item3 { grid-area: main; padding-left: 30px; padding-right: 10; text-align:center;}
+  .item4 { grid-area: right; padding-left: 20px; padding-top: 0px; align-self: start; position: sticky; top: 100px;}
+  .item5 { grid-area: footer; text-align: center; }
 
-.grid-container {
-  display: grid;
-  grid-template-areas:
-    'menu menu header header header right'
-    'menu menu main main main right'
-    'menu menu footer footer footer right';
-  gap: 5px;
-  padding: 5px;
+  .grid-container {
+    display: grid;
+    grid-template-areas:
+      'menu menu header header header right'
+      'menu menu main main main right'
+      'menu menu footer footer footer right';
+    gap: 5px;
+    padding: 5px;
+  }
+  .phoneNav {display: none;}
+
+
 }
 
-
-
-.index {background-color: #fbe5c8;}
-
-.justified {text-align: justify;}
-
-.phoneNav {display: none;}
-
 .desktopNav {text-align: center;}
+
+
+.index {background-color: #fbe5c8; hyphens:auto;}
+
+.justified {text-align: justify; hyphens:auto;}
+
+
 
 .grid-container > header, nav, section, aside, footer {
   background-color: #fbe5c8;
@@ -46,16 +50,26 @@
     .grid-container > header, nav, section, aside, footer {
       background-color: #fbe5c8;
       padding: 20px 0;
-      font-size: 12px;
+      font-size: 12pt;
     }
   
+    .item1 { grid-area: header; text-align: center; padding: 0; }
+    .item2 { grid-area: menu; border-style: solid; }
+    .item3 { grid-area: main; padding-left: 30px; padding-right: 10; text-align:center;}
+    .item4 { grid-area: right; padding-left: 20px; padding-top: 0px; align-self: start; position: sticky; top: 100px;}
+    .item5 { grid-area: footer; text-align: center; }
+
+    h1, h2, h3, h4, h5 {
+      text-align: center;
+    }
+
     .grid-container {
       display: grid;
       grid-template-areas:
-        'header header right'
-        'menu menu right'
-        'main main right'
-        'main main right';
+        'header header header header'
+        'menu menu menu menu'
+        'main main right right'
+        'main main right right';
       gap: 5px;
       padding: 5px;
     }

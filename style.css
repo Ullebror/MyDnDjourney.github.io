@@ -1,14 +1,17 @@
 .roll20 {
   background-color: #f297f2;   
+  hyphens:auto;
 }
 
 .fate {
   background-color:#3c93f7;
   text-align: center;
+  hyphens:auto;
 }
 
 .fantasyGrounds{
   background-color:#fbe5c8;
+  hyphens:auto;
 }
 
 .fate_paragraph {
@@ -17,10 +20,12 @@
   padding: 5px;
   background-color:rgba(101, 172, 253, 0.979);
   text-align: justify;
+  hyphens:auto;
 }
 
 .characters {
   background-color:#fbe5c8;
+  hyphens:auto;
 }
 
 .roll20_paragraph {
@@ -29,6 +34,7 @@
   padding: 5px;
   background-color:rgba(197, 101, 253, 0.979);
   text-align: justify;
+  hyphens:auto;
 }
 
 img {
@@ -42,13 +48,12 @@ img {
   position:sticky;
   align-self: start;
   top:150px;
-}
-.links {
-  text-align: center;
+  hyphens:auto;
 }
 
 .terms {
   background-color: #fbe5c8;
+  hyphens:auto;
 }
 
 h1, h2, h3, h4, h5 {
@@ -103,9 +108,9 @@ h1, h2, h3, h4, h5 {
     display: grid;
     grid-template-areas:
       'header header header header'
-      'menu menu  menu right'
-      'main main main right'
-      'main main main right';
+      'menu menu  menu menu'
+      'main main right right'
+      'main main right right';
     gap: 5px;
     padding: 5px;
   }
@@ -119,6 +124,7 @@ h1, h2, h3, h4, h5 {
     text-align: center;
     display: block;
     font-size: 10pt;
+    hyphens:auto;
   }
 
   p { font-size: 10pt; }
