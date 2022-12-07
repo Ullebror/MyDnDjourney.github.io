@@ -40,7 +40,7 @@
 img {
   max-width: 100%;
   height: auto;
-  width: auto\9; /* ie8 */
+  width: auto;
   border: solid;
 }
 
@@ -63,7 +63,7 @@ h1, h2, h3, h4, h5 {
 @media only screen and (min-width : 1001px){
   .item1 { grid-area: header; text-align: center; }
   .item2 { grid-area: menu; border-style: solid; align-self: start; position: sticky; top: 120px;}
-  .item3 { grid-area: main; padding-left: 30px; padding-right: 10; text-align:justify;}
+  .item3 { grid-area: main; padding-left: 30px; padding-right: 10px; text-align:justify;}
   .item4 { grid-area: right; padding-left: 10px; padding-top: 50px; }
   .item5 { grid-area: footer; text-align: center; }
 
@@ -78,7 +78,7 @@ h1, h2, h3, h4, h5 {
   }
 
   .grid-container > header, nav, section, aside, footer {
-    padding: 20px 0;
+    padding: 20px;
     font-size: 30px;
     font-family: 'Times New Roman', Times, serif;
   }
