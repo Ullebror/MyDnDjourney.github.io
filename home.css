@@ -21,9 +21,9 @@
 .desktopNav {text-align: center;}
 
 
-.index {background-color: #fbe5c8; hyphens:auto;}
+body {background-color: #fbe5c8; }
 
-.justified {text-align: justify; hyphens:auto;}
+.bodyText {text-align: left;}
 
 
 

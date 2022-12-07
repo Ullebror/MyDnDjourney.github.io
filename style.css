@@ -1,17 +1,14 @@
 .roll20 {
   background-color: #f297f2;   
-  hyphens:auto;
 }
 
 .fate {
   background-color:#3c93f7;
   text-align: center;
-  hyphens:auto;
 }
 
 .fantasyGrounds{
   background-color:#fbe5c8;
-  hyphens:auto;
 }
 
 .fate_paragraph {
@@ -19,13 +16,11 @@
   border-radius: 5px;
   padding: 5px;
   background-color:rgba(101, 172, 253, 0.979);
-  text-align: justify;
-  hyphens:auto;
+  text-align: left;
 }
 
 .characters {
   background-color:#fbe5c8;
-  hyphens:auto;
 }
 
 .roll20_paragraph {
@@ -33,8 +28,7 @@
   border-radius: 5px;
   padding: 5px;
   background-color:rgba(197, 101, 253, 0.979);
-  text-align: justify;
-  hyphens:auto;
+  text-align: left;
 }
 
 img {
@@ -48,12 +42,10 @@ img {
   position:sticky;
   align-self: start;
   top:150px;
-  hyphens:auto;
 }
 
 .terms {
   background-color: #fbe5c8;
-  hyphens:auto;
 }
 
 h1, h2, h3, h4, h5 {
@@ -63,7 +55,7 @@ h1, h2, h3, h4, h5 {
 @media only screen and (min-width : 1001px){
   .item1 { grid-area: header; text-align: center; }
   .item2 { grid-area: menu; border-style: solid; align-self: start; position: sticky; top: 120px;}
-  .item3 { grid-area: main; padding-left: 30px; padding-right: 10px; text-align:justify;}
+  .item3 { grid-area: main; padding-left: 30px; padding-right: 10px;}
   .item4 { grid-area: right; padding-left: 10px; padding-top: 50px; }
 
   .grid-container {
@@ -94,7 +86,7 @@ h1, h2, h3, h4, h5 {
 @media only screen and (max-width : 1000px){
   .item1 { grid-area: header; text-align: center; }
   .item2 { grid-area: menu; border-style: solid;}
-  .item3 { grid-area: main; text-align:justify;}
+  .item3 { grid-area: main;}
   .item4 { grid-area: right; padding-left: 10px; padding-top: 50px; }
 
   .grid-container > header, nav, section, aside, footer {
