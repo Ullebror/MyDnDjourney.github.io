@@ -65,14 +65,13 @@ h1, h2, h3, h4, h5 {
   .item2 { grid-area: menu; border-style: solid; align-self: start; position: sticky; top: 120px;}
   .item3 { grid-area: main; padding-left: 30px; padding-right: 10px; text-align:justify;}
   .item4 { grid-area: right; padding-left: 10px; padding-top: 50px; }
-  .item5 { grid-area: footer; text-align: center; }
 
   .grid-container {
     display: grid;
     grid-template-areas:
       'menu menu header header header header'
       'menu menu main main main right'
-      'menu menu footer footer footer right';
+      'menu menu main main main right';
     gap: 5px;
     padding: 5px;
   }
@@ -97,7 +96,6 @@ h1, h2, h3, h4, h5 {
   .item2 { grid-area: menu; border-style: solid;}
   .item3 { grid-area: main; text-align:justify;}
   .item4 { grid-area: right; padding-left: 10px; padding-top: 50px; }
-  .item5 { grid-area: footer; text-align: center; }
 
   .grid-container > header, nav, section, aside, footer {
     padding: 20px 0;
